@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="panda_pick_and_place">
+    <!--A global light source-->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!--A ground plane-->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <!-- A Table
+    <include>
+      <uri>model://table</uri>
+      <pose>0.016428 0.000584 0.0 0 -0 0</pose>
+      <static>1</static>
+    </include> -->
+    <!--A pick tray-->
+    <include>
+      <uri>model://pick_tray</uri>
+      <pose>0.2 -0.22 0.001 0 -0 -0</pose>
+      <static>1</static> <!--Hot Fix to prevent drifting see #206-->
+    </include>
+    <!--A place tray-->
+    <include>
+      <uri>model://place_tray</uri>
+      <pose>0.2 0.22 0.001 0 -0 -0</pose>
+      <static>1</static> <!--Hot Fix to prevent drifting see #206-->
+    </include>
+    <!--A stone-->
+    <include>
+      <uri>model://marker_0</uri>
+      <pose>0.2 -0.22 0.05 0 -1.5708 -0</pose>
+    </include>
+  </world>
+</sdf>
