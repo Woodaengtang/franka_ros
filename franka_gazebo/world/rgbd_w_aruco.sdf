@@ -26,5 +26,10 @@
       <uri>model://marker_0</uri>
       <pose>-0.1 -0.25 0.05 0 -1.5708 -0</pose>
     </include>
+    <!--Kinect RGBD Camera box-->
+    <!-- <include>
+      <uri>model://rgbd_cam</uri>
+      <pose>-0.3 0.0 0.01 0 0 0</pose>
+    </include> -->
   </world>
 </sdf>
